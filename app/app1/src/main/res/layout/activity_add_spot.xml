@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F0E8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3D2B1F"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Додај компанија"
+                android:textColor="#F5F0E8"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:text="✕"
+                android:background="@android:color/transparent"
+                android:textColor="#C4883A"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Назив -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Назив" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etName" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/bg_search"
+            android:hint="Внеси назив..." android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:inputType="text" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+        <!-- Адреса -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Адреса" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etAddress" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/bg_search"
+            android:hint="Внеси адреса..." android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:inputType="text" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+        <!-- Lat / Lng -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginEnd="8dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Географска ширина" android:textColor="#3D2B1F" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp" />
+                <EditText android:id="@+id/etLatitude" android:layout_width="match_parent"
+                    android:layout_height="52dp" android:background="@drawable/bg_search"
+                    android:hint="41.9981" android:paddingStart="16dp" android:paddingEnd="16dp"
+                    android:inputType="numberDecimal" android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Географска должина" android:textColor="#3D2B1F" android:textSize="13sp"
+                    android:textStyle="bold" android:layout_marginBottom="4dp" />
+                <EditText android:id="@+id/etLongitude" android:layout_width="match_parent"
+                    android:layout_height="52dp" android:background="@drawable/bg_search"
+                    android:hint="22.1875" android:paddingStart="16dp" android:paddingEnd="16dp"
+                    android:inputType="numberDecimal" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Емаил -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Контакт емаил" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etEmail" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/bg_search"
+            android:hint="email@primer.com" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:inputType="textEmailAddress" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+        <!-- Телефон -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Телефон" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etPhone" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/bg_search"
+            android:hint="+389 32 123 456" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:inputType="phone" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+        <!-- Веб -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Веб страна" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="4dp" />
+        <EditText android:id="@+id/etWebsite" android:layout_width="match_parent"
+            android:layout_height="52dp" android:background="@drawable/bg_search"
+            android:hint="www.primer.mk" android:paddingStart="16dp" android:paddingEnd="16dp"
+            android:inputType="textUri" android:textSize="14sp" android:layout_marginBottom="12dp" />
+
+        <!-- Ниво на бучава -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Ниво на бучава" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" />
+        <RadioGroup android:id="@+id/rgNoise" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+            <RadioButton android:id="@+id/rbQuiet" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="🔇 Тивко" android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <RadioButton android:id="@+id/rbMedium" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="💬 Средно" android:textColor="#3D2B1F" android:buttonTint="#C4883A"
+                android:checked="true" />
+            <RadioButton android:id="@+id/rbLoud" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="📢 Бучно" android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+        </RadioGroup>
+
+        <!-- Amenities -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Amenities" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card" android:orientation="vertical"
+            android:padding="12dp" android:layout_marginBottom="12dp">
+            <CheckBox android:id="@+id/cbWifi" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="📶 WiFi"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbOutlets" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="🔌 Приклучоци за лаптоп"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbCoffee" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="☕ Кафе"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbFood" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="🥐 Храна"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbParking" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="🚗 Паркинг"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+        </LinearLayout>
+
+        <!-- Категорија -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Категорија" android:textColor="#3D2B1F" android:textSize="13sp"
+            android:textStyle="bold" android:layout_marginBottom="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:background="@drawable/bg_card" android:orientation="vertical"
+            android:padding="12dp" android:layout_marginBottom="16dp">
+            <CheckBox android:id="@+id/cbIndustry" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="💼 Индустрија"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbEntertainment" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="🎬 Забава"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbEducation" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="📚 Едукација"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+            <CheckBox android:id="@+id/cbServices" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:text="🔧 Сервиси"
+                android:textColor="#3D2B1F" android:buttonTint="#C4883A" />
+        </LinearLayout>
+
+        <!-- Save -->
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent"
+            android:layout_height="56dp" android:text="💾 ЗАЧУВАЈ"
+            android:background="@drawable/bg_rating" android:textColor="#F5F0E8"
+            android:textSize="16sp" android:textStyle="bold" android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

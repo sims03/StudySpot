@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "174547558355",
+    "project_id": "studyspotfinder-d1715",
+    "storage_bucket": "studyspotfinder-d1715.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174547558355:android:9f90d399db440b094c1926",
+        "android_client_info": {
+          "package_name": "com.example.app1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHJBmjRA-JVhgOuNof9V1erKXyu9U_UQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
